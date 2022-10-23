@@ -1,50 +1,87 @@
-<div class="bg-body" style="background-image: url('/assets/Images/bggg.jpg');height: 900px ;background-position: center ;background-size: cover">
-<div class="container">
-  <div>
-    <div style=" width: 150px" class=" row">
-      <div (click)="alclicked()" style="cursor: pointer;border-right-style: solid"  class="col">Al</div>
+<div class="bg-body">
+
+  <div class="col langBox" id="langId">
+    <div class="row float-end ">
+      <div (click)="alclicked()" style="cursor: pointer" class="col">AL</div>
       <div (click)="mkclicked()" style="cursor: pointer" class="col">MK</div>
-      <div (click)="enclicked()" style="cursor: pointer;border-left-style: solid" class="col">EN</div>
+      <div (click)="enclicked()" style="cursor: pointer" class="col">EN</div>
     </div>
+
+  </div>
+  <div class="icons " id="ikona">
+    <fa-icon class="fa fa-bars" (click)="checkClass()"></fa-icon>
   </div>
 
-  <div>
-    <div class="row">
-      <div class="col" style="margin-top: 100px;padding: 0;justify-content: center;" *ngFor="let menu of menus">
-        <div class="buttonat" (click)="getArticles(menu.name,this.lang);" style="font-weight: bold;height: 40px;text-align:center;cursor: pointer;border: 1px solid;margin: 0px">{{menu.name}}</div>
+  <div class="container">
+    <div class="row naviBox">
+      <div class="col naviLogoContainer">
+        <img class="naviLogo" src="assets/Brand/TOK%202000-1.png" alt="logo">
+      </div>
+      <div class="col-9 navigbar">
+        <div class="row menuButtons " id="myTopnav">
+          <div class="col menuButtonsFont">
+            MENU
+          </div>
+          <div class="col menuButtonsFont">
+            LOKACIONI
+          </div>
+          <div class="col menuButtonsFont">
+            GALERIA
+          </div>
+          <div class="col menuButtonsFont">
+            EVENTE
+          </div>
+          <div class="col menuButtonsFont">
+            ORARI
+          </div>
+
+        </div>
+
       </div>
     </div>
-    <div class="row" style="margin-top: 130px">
-      <ng-template [ngIf]="!articles">
-        <p>This will be in place of the menu</p>
-      </ng-template>
-      <div class="col">
-      <div class="row" *ngFor="let article of articles">
-          <div class="row">
-          <div class="col"style="font-weight: bold">{{article.name}}</div>
-          <div class="col"style="font-weight: bold">{{article.price}}  den</div>
-          </div>
-      </div>
-      </div>
-      <div class="col">
-        <div class="row" *ngFor="let article2 of articles2">
-          <div class="row">
-            <div class="col"style="font-weight: bold" >{{article2.name}}</div>
-            <div class="col" style="font-weight: bold">{{article2.price}}  den</div>
+
+    <div class="divider"></div>
+
+
+    <ng-template [ngIf]="!isMenu">
+      <div class="row" style="width: 100%">
+        <div class="col" style="margin-top: 100px;justify-content: center;" *ngFor="let menu of menus">
+          <div class="buttonat" (click)="getArticles(menu.name,this.lang);">
+            <p style="margin: 0;font-size: 19px"> {{menu.name}}</p>
           </div>
         </div>
       </div>
-      <div class="col">
-        <div class="row" *ngFor="let article2 of articles3">
-          <div class="row">
-            <div class="col" style="font-weight: bold">{{article2.name}}</div>
-            <div class="col" style="font-weight: bolder;">{{article2.price}}  den</div>
+      <div class="row" style="margin-top: 130px">
+        <ng-template [ngIf]="!articles">
+          <p>This will be in place of the menu</p>
+        </ng-template>
+        <div class="col">
+          <div class="row" *ngFor="let article of articles">
+            <div class="row">
+              <div class="col" style="font-weight: bold">{{article.name}}</div>
+              <div class="col" style="font-weight: bold">{{article.price}}  den</div>
+            </div>
           </div>
         </div>
+        <div class="col">
+          <div class="row" *ngFor="let article2 of articles2">
+            <div class="row">
+              <div class="col" style="font-weight: bold">{{article2.name}}</div>
+              <div class="col" style="font-weight: bold">{{article2.price}}  den</div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="row" *ngFor="let article2 of articles3">
+            <div class="row">
+              <div class="col" style="font-weight: bold">{{article2.name}}</div>
+              <div class="col" style="font-weight: bolder;">{{article2.price}}  den</div>
+            </div>
+          </div>
+        </div>
+
       </div>
+    </ng-template>
 
-    </div>
   </div>
-</div>
-
 </div>
