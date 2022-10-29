@@ -37,7 +37,7 @@
   width: 100%;
 }
 .paragraphPosition{
-  visibility: hidden;
+  /*visibility: hidden;*/
 }
 
 .navigbar {
@@ -182,6 +182,7 @@
     position: absolute;
     text-align: center;
     top: 0px;
+    visibility: visible;
   }
 
   .icons {
