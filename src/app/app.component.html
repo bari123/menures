@@ -1,4 +1,4 @@
-<div class="bg-body">
+<div class="bg-body" id="main">
 
   <div class="col langBox" id="langId">
     <div class="row float-end ">
@@ -8,8 +8,27 @@
     </div>
 
   </div>
-  <div class="icons " id="ikona">
-    <fa-icon class="fa fa-bars" (click)="checkClass()"></fa-icon>
+
+  <div class="icons" id="ikona">
+    <p class="paragraphPosition">
+      <fa-icon class="fa fa-bars " (click)="checkClass()"></fa-icon>
+      {{currentMenu}}</p>
+  </div>
+
+
+  <div id="mySidenav" class="sidenav">
+    <a href="#" class="closebtn" (click)="closeMenu()">X</a>
+    <a href="#" (click)="toMenu()">MENU</a>
+    <a href="#" (click)="toLocation()">LOKACION</a>
+    <a href="#" (click)="toGallery()">GALERIA</a>
+    <a href="#" (click)="toEvents()">EVENTE</a>
+    <a href="#" (click)="toSchedule()">ORARI</a>
+    <img class="naviLogo" src="assets/Brand/TOK%202000-1.png" alt="logo">
+    <div style="display: flex;flex-wrap: wrap;flex-direction: row">
+      <a href="#">AL</a>
+      <a href="#">MK</a>
+      <a href="#">EN</a>
+    </div>
   </div>
 
   <div class="container">
@@ -19,19 +38,19 @@
       </div>
       <div class="col-9 navigbar">
         <div class="row menuButtons " id="myTopnav">
-          <div class="col menuButtonsFont">
+          <div class="col menuButtonsFont" (click)="toMenu()">
             MENU
           </div>
-          <div class="col menuButtonsFont">
+          <div class="col menuButtonsFont" (click)="toLocation()">
             LOKACIONI
           </div>
-          <div class="col menuButtonsFont">
+          <div class="col menuButtonsFont" (click)="toGallery()">
             GALERIA
           </div>
-          <div class="col menuButtonsFont">
+          <div class="col menuButtonsFont" (click)="toEvents()">
             EVENTE
           </div>
-          <div class="col menuButtonsFont">
+          <div class="col menuButtonsFont" (click)="toSchedule()">
             ORARI
           </div>
 
@@ -42,46 +61,113 @@
 
     <div class="divider"></div>
 
-
-    <ng-template [ngIf]="!isMenu">
-      <div class="row" style="width: 100%">
-        <div class="col" style="margin-top: 100px;justify-content: center;" *ngFor="let menu of menus">
+    <ng-template [ngIf]="isMenu">
+      <div class="row butttonat">
+        <div class="col " *ngFor="let menu of menus">
           <div class="buttonat" (click)="getArticles(menu.name,this.lang);">
             <p style="margin: 0;font-size: 19px"> {{menu.name}}</p>
           </div>
         </div>
       </div>
       <div class="row" style="margin-top: 130px">
-        <ng-template [ngIf]="!articles">
-          <p>This will be in place of the menu</p>
-        </ng-template>
+        <!--        <ng-template [ngIf]="!articles">-->
+        <!--          <p>This will be in place of the menu</p>-->
+        <!--        </ng-template>-->
         <div class="col">
           <div class="row" *ngFor="let article of articles">
             <div class="row">
               <div class="col" style="font-weight: bold">{{article.name}}</div>
-              <div class="col" style="font-weight: bold">{{article.price}}  den</div>
+              <div class="col" style="font-weight: bold;font-size: 20px">{{article.price}}  den</div>
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col" id="artikell2">
           <div class="row" *ngFor="let article2 of articles2">
             <div class="row">
               <div class="col" style="font-weight: bold">{{article2.name}}</div>
-              <div class="col" style="font-weight: bold">{{article2.price}}  den</div>
+              <div class="col" style="font-weight: bold;font-size: 20px">{{article2.price}}  den</div>
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col" id="artikell3">
           <div class="row" *ngFor="let article2 of articles3">
             <div class="row">
               <div class="col" style="font-weight: bold">{{article2.name}}</div>
-              <div class="col" style="font-weight: bolder;">{{article2.price}}  den</div>
+              <div class="col" style="font-weight: bolder;font-size: 20px">{{article2.price}}  den</div>
             </div>
           </div>
         </div>
 
       </div>
     </ng-template>
-
+    <ng-template [ngIf]="isLocation">
+      <div style="padding-top: 20px" *ngIf="apiLoaded | async">
+        <google-map
+          width="100%"
+          class="mapContainter"
+          [options]="options"
+          [zoom]="zoom"
+          [center]="center">
+          <map-marker *ngFor="let markerPos of MarkerPositions"
+                      [position]="markerPos"
+          ></map-marker>
+        </google-map>
+      </div>
+    </ng-template>
+    <ng-template [ngIf]="isEvents"></ng-template>
+    <ng-template [ngIf]="isGallery"></ng-template>
+    <ng-template [ngIf]="isSchedule">
+      <div class="row spaceFromMenu" style="justify-content: center;font-size: 30px;font-weight: bolder">
+        Orari
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <div class="scheduleFont">
+            E HENE
+          </div>
+          <div class="scheduleFont">
+            E MARTE
+          </div>
+          <div class="scheduleFont">
+            E MERKURE
+          </div>
+          <div class="scheduleFont">
+            E EJTE
+          </div>
+          <div class="scheduleFont">
+            E PREMTE
+          </div>
+          <div class="scheduleFont">
+            E SHTUNE
+          </div>
+          <div class="scheduleFont">
+            E DIEL
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="scheduleFont">
+            07:00-18:00
+          </div>
+          <div class="scheduleFont">
+            07:00-18:00
+          </div>
+          <div class="scheduleFont">
+            07:00-18:00
+          </div>
+          <div class="scheduleFont">
+            07:00-18:00
+          </div>
+          <div class="scheduleFont">
+            07:00-18:00
+          </div>
+          <div class="scheduleFont">
+            07:00-18:00
+          </div>
+          <div class="scheduleFont">
+            PUSHIM
+          </div>
+        </div>
+      </div>
+    </ng-template>
   </div>
 </div>

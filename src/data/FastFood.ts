@@ -29,7 +29,6 @@ export const fastfood = [
     name:"Cheese Burger/Pomfrit ",
     price:"100/110"
   },
-  ,
   {
     id:7,
     name:"Sanduic/Pomfrit ",
