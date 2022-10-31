@@ -1,173 +1,47 @@
-<div class="bg-body" id="main">
-
-  <div class="col langBox" id="langId">
-    <div class="row float-end ">
-      <div (click)="alclicked()" style="cursor: pointer" class="col">AL</div>
-      <div (click)="mkclicked()" style="cursor: pointer" class="col">MK</div>
-      <div (click)="enclicked()" style="cursor: pointer" class="col">EN</div>
-    </div>
-
-  </div>
-
-  <div class="icons" id="ikona">
-    <p class="paragraphPosition">
-      <fa-icon class="fa fa-bars " (click)="checkClass()"></fa-icon>
-      {{currentMenu}}</p>
-  </div>
+<div class="mainBody">
 
 
   <div id="mySidenav" class="sidenav">
-    <a href="#" class="closebtn" (click)="closeMenu()">X</a>
-    <a href="#" (click)="toMenu()">MENU</a>
-    <a href="#" (click)="toLocation()">LOKACION</a>
-    <a href="#" (click)="toGallery()">GALERIA</a>
-    <a href="#" (click)="toEvents()">EVENTE</a>
-    <a href="#" (click)="toSchedule()">ORARI</a>
-    <img class="naviLogo" src="assets/Brand/TOK%202000-1.png" alt="logo">
-    <div style="display: flex;flex-wrap: wrap;flex-direction: row">
-      <a href="#">AL</a>
-      <a href="#">MK</a>
-      <a href="#">EN</a>
-    </div>
+    <a href="" class="closebtn" (click)="closeMenu()">&times;</a>
+    <a href="/menu">Menu</a>
+    <a href="/gallery">Gallery</a>
+    <a href="/events">Events</a>
+    <a href="/contact-us">Contact</a>
+    <a style="bottom: 0px" href=""><img src="assets/icons/icons8-facebook-48.png"> </a>
+  </div>
+  <div class="ikona" id="myIcon">
+    <div style="font-size: 60px;color:gold" class="material-symbols-outlined" (click)="checkClass()">menu</div>
+    <svg style="position: absolute;right: 20px;top: 2px;" data-v-423bf9ae="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 370.7905234550641 163" class="iconAbove" height="50" width="100">
+      <g data-v-423bf9ae="" id="17361580-bced-4d5a-b3aa-e50863c756ca" fill="black" stroke="white"
+         transform="matrix(5.928853821986509,0,0,5.928853821986509,-0.8300407980186719,99.73912967157888)">
+        <path
+          d="M3.68 10.50L4.44 10.50L4.44 1.39L7.98 1.39L7.98 0.71L0.14 0.71L0.14 1.39L3.68 1.39ZM13.93 0.55C10.63 0.55 8.99 2.95 8.99 5.59C8.99 8.18 10.64 10.67 13.93 10.67C17.22 10.67 18.86 8.19 18.87 5.61C18.89 2.97 17.23 0.55 13.93 0.55ZM13.93 1.25C16.74 1.25 18.14 3.33 18.14 5.60C18.14 7.81 16.73 9.97 13.93 9.97C11.14 9.97 9.74 7.81 9.73 5.60C9.72 3.29 11.12 1.25 13.93 1.25ZM27.55 10.44L22.18 5.39L27.10 0.77L27.10 0.70L26.19 0.70L21.43 5.17L21.43 0.70L20.68 0.70L20.68 10.49L21.43 10.49L21.43 5.67L26.60 10.50L27.55 10.50ZM29.04 3.30C29.04 1.68 30.74 1.23 32.05 1.23C33.39 1.23 35.13 1.71 35.13 3.43C35.13 5.08 33.32 5.56 32.05 5.56C30.24 5.56 28.24 6.12 28.24 8.29L28.24 10.50L35.73 10.50L35.73 9.77L28.98 9.77L28.98 8.27C28.98 6.59 30.65 6.26 32.07 6.24C33.81 6.24 35.83 5.43 35.83 3.43C35.81 1.32 33.85 0.57 32.05 0.57C30.28 0.57 28.29 1.22 28.29 3.30ZM38.14 4.42C38.14 0.24 44.16 0.25 44.16 4.42L44.16 6.76C44.16 10.95 38.14 10.96 38.14 6.76ZM37.39 6.76C37.39 11.90 44.90 11.89 44.90 6.76L44.90 4.42C44.90-0.70 37.39-0.71 37.39 4.42ZM47.03 4.42C47.03 0.24 53.05 0.25 53.05 4.42L53.05 6.76C53.05 10.95 47.03 10.96 47.03 6.76ZM46.28 6.76C46.28 11.90 53.79 11.89 53.79 6.76L53.79 4.42C53.79-0.70 46.28-0.71 46.28 4.42ZM55.92 4.42C55.92 0.24 61.94 0.25 61.94 4.42L61.94 6.76C61.94 10.95 55.92 10.96 55.92 6.76ZM55.17 6.76C55.17 11.90 62.68 11.89 62.68 6.76L62.68 4.42C62.68-0.70 55.17-0.71 55.17 4.42Z"></path>
+      </g>
+      <g data-v-423bf9ae="" id="90ce5f65-f22f-4b1c-b83f-7a50f8c8bd74" transform="matrix(2.8125,0,0,2.8125,141,0)"
+         stroke="gold" fill="black">
+        <path d="M0 22h1v10H0zM7.75 14h1v18h-1zM15.5 0h1v32h-1zM23.25 6h1v26h-1zM31 13h1v19h-1z"></path>
+      </g>
+    </svg>
   </div>
 
-  <div class="container">
-    <div class="row naviBox">
-      <div class="col naviLogoContainer">
-        <img class="naviLogo" src="assets/Brand/TOK%202000-1.png" alt="logo">
-      </div>
-      <div class="col-9 navigbar">
-        <div class="row menuButtons " id="myTopnav">
-          <div class="col menuButtonsFont" (click)="toMenu()">
-            MENU
-          </div>
-          <div class="col menuButtonsFont" (click)="toLocation()">
-            LOKACIONI
-          </div>
-          <div class="col menuButtonsFont" (click)="toGallery()">
-            GALERIA
-          </div>
-          <div class="col menuButtonsFont" (click)="toEvents()">
-            EVENTE
-          </div>
-          <div class="col menuButtonsFont" (click)="toSchedule()">
-            ORARI
-          </div>
-
-        </div>
-
+  <div class="mainContainer" id="myMain">
+    <div class="row navContainer">
+      <div class="col navLinks ">
+        <div class="menuDiv"><a class="menuText" href="/menu">Menu</a></div>
+        <div class="menuDiv"><a class="menuText" href="/gallery">Gallery</a></div>
+        <div class="menuDiv"><a href="/events" class="menuText">Events</a></div>
+        <div class="menuDiv"><a href="/contact-us" class="menuText">Contact & Location</a></div>
       </div>
     </div>
+    <!--  </header>-->
 
-    <div class="divider"></div>
+    <div class="contentContainer">
+      <router-outlet>
 
-    <ng-template [ngIf]="isMenu">
-      <div class="row butttonat">
-        <div class="col " *ngFor="let menu of menus">
-          <div class="buttonat" (click)="getArticles(menu.name,this.lang);">
-            <p style="margin: 0;font-size: 19px"> {{menu.name}}</p>
-          </div>
-        </div>
-      </div>
-      <div class="row" style="margin-top: 130px">
-        <!--        <ng-template [ngIf]="!articles">-->
-        <!--          <p>This will be in place of the menu</p>-->
-        <!--        </ng-template>-->
-        <div class="col">
-          <div class="row" *ngFor="let article of articles">
-            <div class="row">
-              <div class="col" style="font-weight: bold">{{article.name}}</div>
-              <div class="col" style="font-weight: bold;font-size: 20px">{{article.price}}  den</div>
-            </div>
-          </div>
-        </div>
-        <div class="col" id="artikell2">
-          <div class="row" *ngFor="let article2 of articles2">
-            <div class="row">
-              <div class="col" style="font-weight: bold">{{article2.name}}</div>
-              <div class="col" style="font-weight: bold;font-size: 20px">{{article2.price}}  den</div>
-            </div>
-          </div>
-        </div>
-        <div class="col" id="artikell3">
-          <div class="row" *ngFor="let article2 of articles3">
-            <div class="row">
-              <div class="col" style="font-weight: bold">{{article2.name}}</div>
-              <div class="col" style="font-weight: bolder;font-size: 20px">{{article2.price}}  den</div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </ng-template>
-    <ng-template [ngIf]="isLocation">
-      <div style="padding-top: 20px" *ngIf="apiLoaded | async">
-        <google-map
-          width="100%"
-          class="mapContainter"
-          [options]="options"
-          [zoom]="zoom"
-          [center]="center">
-          <map-marker *ngFor="let markerPos of MarkerPositions"
-                      [position]="markerPos"
-          ></map-marker>
-        </google-map>
-      </div>
-    </ng-template>
-    <ng-template [ngIf]="isEvents"></ng-template>
-    <ng-template [ngIf]="isGallery"></ng-template>
-    <ng-template [ngIf]="isSchedule">
-      <div class="row spaceFromMenu" style="justify-content: center;font-size: 30px;font-weight: bolder">
-        Orari
-      </div>
-      <div class="row">
-        <div class="col-6">
-          <div class="scheduleFont">
-            E HENE
-          </div>
-          <div class="scheduleFont">
-            E MARTE
-          </div>
-          <div class="scheduleFont">
-            E MERKURE
-          </div>
-          <div class="scheduleFont">
-            E EJTE
-          </div>
-          <div class="scheduleFont">
-            E PREMTE
-          </div>
-          <div class="scheduleFont">
-            E SHTUNE
-          </div>
-          <div class="scheduleFont">
-            E DIEL
-          </div>
-        </div>
-        <div class="col-6">
-          <div class="scheduleFont">
-            07:00-18:00
-          </div>
-          <div class="scheduleFont">
-            07:00-18:00
-          </div>
-          <div class="scheduleFont">
-            07:00-18:00
-          </div>
-          <div class="scheduleFont">
-            07:00-18:00
-          </div>
-          <div class="scheduleFont">
-            07:00-18:00
-          </div>
-          <div class="scheduleFont">
-            07:00-18:00
-          </div>
-          <div class="scheduleFont">
-            PUSHIM
-          </div>
-        </div>
-      </div>
-    </ng-template>
+      </router-outlet>
+    </div>
   </div>
 </div>
+<div class="GoUp" *ngIf="isShow" (click)="gotoTop()"><span class="scrollLogo material-symbols-outlined">
+keyboard_double_arrow_up
+</span></div>

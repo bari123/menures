@@ -1,0 +1,179 @@
+.mainBody {
+  /*background-color: #25274D;*/
+
+  overflow-x: hidden;
+}
+
+
+.navContainer {
+  background-color: #2B282C;
+  top: 0px;
+  position: sticky;
+  padding: 10px;
+  opacity: 0.5;
+  z-index: 999999;
+}
+
+.GoUp {
+  opacity: 0.7;
+  position: fixed;
+  height: 50px;
+  width: 50px;
+  border-radius: 100px;
+  float: right;
+  cursor: pointer;
+  right: 14px;
+  bottom: 14px;
+  z-index: 9999;
+  /*opacity: 0.7;*/
+  background-color: black;
+  color: white;
+}
+
+.scrollLogo {
+  margin-top: 8px;
+  margin-left: 8px;
+  font-size: 35px;
+}
+
+.navLinks {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+
+}
+
+.navLinksMobile {
+  width: 0px;
+}
+
+.menuText {
+  color: #464866;
+  /*font-family: 'Maven Pro', sans-serif;*/
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 22px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  text-decoration-line: none;
+}
+
+.menuText:hover {
+  color: #D93128;
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.menuText:after {
+  cursor: pointer;
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #D93128;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.menuText:hover:after {
+  cursor: pointer;
+  color: #D93128;
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.menuDiv {
+  /*display: flex;*/
+  /*flex-wrap: wrap;*/
+  /*align-content: center;*/
+  /*justify-content: center;*/
+}
+
+.ikona {
+  display: none;
+  visibility: hidden;
+}
+
+@media screen and (max-width: 600px) {
+  .navContainer {
+    visibility: hidden;
+    overflow: hidden;
+  }
+
+  .ikona {
+    display: flex;
+    margin: 0;
+    width: 100%;
+    background-color: #2B282C;
+    position: absolute;
+    color: black;
+    visibility: visible;
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+
+}
+
+
+.sidenav {
+  text-align: center;
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  overflow: hidden;
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  z-index: 9999999;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #d79e06;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+

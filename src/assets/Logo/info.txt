@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: Nexa_Free_Light
+font link: https://www.fontfabric.com/nexa-free-font/http://www.myfonts.com/fonts/facetype/publica-sans/regular/#index
+font author: Font Fabric
+font author site: http://www.fontfabric.com/
+
+
+icon designer: Alfredo @ IconsAlfredo.us
+icon designer link: /AlfredoCreates
+        
+{"bg":"#2B282C","icon":"#746657","font":"#ffffff","slogan":"#ffffff"}
+      
