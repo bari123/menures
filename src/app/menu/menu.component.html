@@ -1,16 +1,43 @@
 <div class="mainContainer">
   <img src="assets/Images/Untitled.png" width="600">
   <div class="menuCategories">
-    <div *ngFor="let cat of MenuCategories" class="row menuButtons">
-      <div class="col">{{cat.name}}</div>
+    <div *ngFor="let cat of MenuCategories;let id = index" class="row menuButtons">
+      <div class="col" (click)="selectMenu(id)">{{cat.name}}</div>
     </div>
   </div>
   <div class="menuContainer">
     <div class="menuMainTitle">
-      <div  *ngFor="let article of MainArticles;let i = index">
+      <div *ngFor="let article of MainArticles;let i = index">
         <div class="fw-bold fs-1 articleTitle">{{article.title}}</div>
         <ul style="margin: 50px" class="leaders articles " *ngFor="let art of article.content">
-          <li><span style="font-family: 'Maven Pro', sans-serif;font-size: 20px;font-weight: bolder">{{art.name}}</span><span style="font-family: 'Maven Pro', sans-serif;font-size: 20px;font-weight: bolder">{{art.price}}</span></li>
+          <li><span style="font-family: 'Maven Pro', sans-serif;font-size: 20px;font-weight: bolder">{{art.name}}</span><span
+            style="font-family: 'Maven Pro', sans-serif;font-size: 20px;font-weight: bolder">{{art.price}}</span></li>
+
+        </ul>
+      </div>
+      <div *ngFor="let article of Breakfast;let i = index">
+        <ul style="margin: 50px" class=" ">
+          <li>
+            <span
+            style="font-family: 'Maven Pro', sans-serif;font-size: 20px;font-weight: bolder">{{article.name}}</span>
+            <span class="float-end"
+            style="font-family: 'Maven Pro', sans-serif;font-size: 20px;font-weight: bolder">{{article.price}}</span>
+            <span class="float-end"
+              style="font-family: 'Maven Pro', sans-serif;font-size: 12px;">{{article.description}}</span>
+          </li>
+
+        </ul>
+      </div>
+      <div *ngFor="let article of Articles;let i = index">
+        <ul style="margin: 50px" class=" ">
+          <li>
+            <span
+              style="font-family: 'Maven Pro', sans-serif;font-size: 20px;font-weight: bolder">{{article.name}}</span>
+            <span class="float-end"
+                  style="font-family: 'Maven Pro', sans-serif;font-size: 20px;font-weight: bolder">{{article.price}}</span>
+            <span class="float-end"
+                  style="font-family: 'Maven Pro', sans-serif;font-size: 12px;">{{article.description}}</span>
+          </li>
 
         </ul>
       </div>

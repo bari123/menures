@@ -12,6 +12,7 @@ import { ContactAndLocationComponent } from './contact-and-location/contact-and-
 import { GalleryComponent } from './gallery/gallery.component';
 import { EventsComponent } from './events/events.component';
 import { HomeComponent } from './home/home.component';
+import {MdbCheckboxModule} from "mdb-angular-ui-kit/checkbox";
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { HomeComponent } from './home/home.component';
     GoogleMapsModule,
     HttpClientModule,
     HttpClientJsonpModule,
+    MdbCheckboxModule
   ],
 
   providers: [],
