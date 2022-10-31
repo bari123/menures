@@ -1,0 +1,80 @@
+.menuContainer {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.menuCategories {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: inherit;
+  justify-content: space-around;
+  margin: 45px auto auto;
+}
+
+.articleTitle {
+  text-align: center;
+  border-bottom: 1px solid black;
+  margin-top: 20px;
+}
+
+.menuButtons {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Maven Pro', sans-serif;
+}
+
+.menuButtons:hover {
+  color: white;
+}
+
+
+.articles {
+  /*text-align: center;*/
+
+}
+
+
+ul.leaders {
+  max-width: 40em;
+  padding: 0;
+  overflow-x: hidden;
+  list-style: none
+}
+
+ul.leaders li:after {
+  float: left;
+  color: gold;
+  width: 0;
+  white-space: nowrap;
+  content: ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . "
+}
+
+ul.leaders span:first-child {
+  padding-right: 0.33em;
+  background: white
+}
+
+ul.leaders span + span {
+  float: right;
+  padding-left: 0.33em;
+  background: white;
+  position: relative;
+  z-index: 1
+}
+
+@media screen and (max-width: 600px) {
+  .menuCategories {
+    position: absolute;
+    left: 30px;
+    top: 140px;
+    color: gold;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0px auto auto;
+  }
+
+}
+

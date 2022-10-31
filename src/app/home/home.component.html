@@ -1,0 +1,55 @@
+<div class="mainContainer">
+
+ <img class="fotoja" src="assets/Images/Background.png" height="200">
+  <div class="shortucts d-flex flex-wrap flex-row justify-content-center margin-auto">
+    <div class="phone">
+<span class="material-symbols-outlined" style="font-size: 50px">
+call
+</span>
+    </div>
+    <div class="facebook">
+<span class="material-symbols-outlined" style="font-size: 50px">
+share
+</span>
+    </div>
+    <div class="location">
+      <span class="material-symbols-outlined" style="font-size: 50px">
+where_to_vote
+</span>
+    </div>
+  </div>
+  <p
+    style="text-align: center;font-family: 'Maven Pro', sans-serif;margin-top: 40px;font-weight: bolder;font-size: 30px">
+    ORARI</p>
+  <div class="row scheduleContainer" *ngFor="let time of Schedule">
+
+    <div class="col day">
+      {{time.day}}
+    </div>
+    <div class="col hours">
+      {{time.hours}}
+    </div>
+  </div>
+
+  <img class="mt-5" style="border-radius: 10px" src="assets/Images/dsBuffer.bmp.png" height="120" width="100%">
+
+  <div class="d-flex flex-column align-items-center justify-content-sm-center p-5">
+    <p class="telNr">TELEFONI</p>
+    <p class="telNr">071-363-973</p>
+  </div>
+  <footer class="footer">
+    <div class="companyInfo">
+      <p>TOK - 2000</p>
+      <p>DOOEL</p>
+      <p>Addres: Ilindeska bb</p>
+    </div>
+    <div class="copyright">
+      <p><span style="font-size: 15px" class="material-symbols-outlined">
+copyright
+</span> 2022 TOK-2000 . All rights reserved</p>
+    </div>
+    <div class="webdesign">
+      web design and production - Bari Ademi
+    </div>
+  </footer>
+</div>
