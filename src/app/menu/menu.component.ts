@@ -49,30 +49,35 @@ export class MenuComponent implements OnInit {
   }
 
   getBbq() {
+    this.Breakfast=[];
     this.Articles = [];
     this.Bbq = this.service.getBbq();
     this.Articles = this.Bbq;
   }
 
   getPizza() {
+    this.Breakfast=[];
     this.Articles = [];
     this.Pizza = this.service.getPizza();
     this.Articles = this.Pizza;
   }
 
   getSalads() {
+    this.Breakfast=[];
     this.Articles = [];
     this.Salads = this.service.getSalads();
     this.Articles = this.Salads;
   }
 
   getBurgers() {
+    this.Breakfast=[];
     this.Articles = []
     this.Burgers = this.service.getBurgers();
     this.Articles = this.Burgers;
   }
 
   getExtra() {
+    this.Breakfast=[];
     this.Articles = []
     this.Extra = this.service.getExtra();
     this.Articles = this.Extra;
