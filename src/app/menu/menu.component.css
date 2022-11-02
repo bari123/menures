@@ -3,6 +3,7 @@
   overflow-x: hidden;
 }
 
+
 .menuCategories {
   display: flex;
   flex-wrap: wrap;
@@ -12,8 +13,9 @@
 }
 
 .articleTitle {
+  color: white;
+  z-index: 99999;
   text-align: center;
-  border-bottom: 1px solid black;
   margin-top: 20px;
 }
 
@@ -23,6 +25,43 @@
   font-weight: bold;
   font-family: 'Maven Pro', sans-serif;
 }
+
+
+.menuButtons:first-child{
+  position: relative;
+  animation-name: menuAnimation;
+  animation-duration: 2s;
+}
+.menuButtons:nth-child(2){
+  position: relative;
+  animation-name: menuAnimation;
+  animation-duration: 3s;
+}
+.menuButtons:nth-child(3){
+  position: relative;
+  animation-name: menuAnimation;
+  animation-duration: 4s;
+}
+.menuButtons:nth-child(4){
+  position: relative;
+  animation-name: menuAnimation;
+  animation-duration: 5s;
+}
+.menuButtons:nth-child(5){
+  position: relative;
+  animation-name: menuAnimation;
+  animation-duration: 6s;
+}.menuButtons:nth-child(6){
+   position: relative;
+   animation-name: menuAnimation;
+   animation-duration: 6s;
+ }
+.menuButtons:nth-child(7){
+  position: relative;
+  animation-name: menuAnimation;
+  animation-duration: 7s;
+}
+
 
 .menuButtons:hover {
   color: white;
@@ -52,13 +91,14 @@ ul.leaders li:after {
 
 ul.leaders span:first-child {
   padding-right: 0.33em;
-  background: white
+  color: white;
+  /*background: white*/
 }
 
 ul.leaders span + span {
   float: right;
   padding-left: 0.33em;
-  background: white;
+  color: white;
   position: relative;
   z-index: 1
 }
@@ -73,8 +113,13 @@ ul.leaders span + span {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-around;
-    margin: 0px auto auto;
+    margin: 2px auto auto;
   }
 
+}
+
+@keyframes menuAnimation {
+  0% {left: -100px; top: 0px}
+  100% {left:0 ; top: 0px}
 }
 

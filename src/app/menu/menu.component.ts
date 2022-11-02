@@ -24,22 +24,28 @@ export class MenuComponent implements OnInit {
   Pizza: PizzaModel[] = [];
   Salads: SaladsModel[] = [];
   Burgers: SendwichModel[] = [];
-  Extra:ExtraModel[]=[];
+  Extra: ExtraModel[] = [];
   Articles: any;
+  item: string;
+  backgroundUrl = "https://img.freepik.com/free-photo/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall_1258-28313.jpg?w=1380&t=st=1667422964~exp=1667423564~hmac=5ac6c5433c6e1756bc162f72e408521d53b7c4d670376680b864b5a14e0eef3c";
 
   constructor(private service: DataServiceService) {
   }
 
   ngOnInit(): void {
     this.getMenu();
+    this.getPijet()
   }
 
   getMenu() {
     this.MenuCategories = this.service.getMenus(this.lang)
-    // console.log(this.MenuCategories)
   }
 
+
   getPijet() {
+    this.MainArticles=[];
+    this.Articles=[];
+    this.Breakfast=[];
     this.MainArticles = this.service.getPijet(this.lang);
   }
 
@@ -49,36 +55,41 @@ export class MenuComponent implements OnInit {
   }
 
   getBbq() {
-    this.Breakfast=[];
     this.Articles = [];
+    this.MainArticles = []
     this.Bbq = this.service.getBbq();
     this.Articles = this.Bbq;
   }
 
   getPizza() {
-    this.Breakfast=[];
+    this.Breakfast = [];
     this.Articles = [];
+    this.MainArticles = []
     this.Pizza = this.service.getPizza();
     this.Articles = this.Pizza;
   }
 
   getSalads() {
-    this.Breakfast=[];
+    this.Breakfast = [];
     this.Articles = [];
+    this.MainArticles = []
     this.Salads = this.service.getSalads();
     this.Articles = this.Salads;
   }
 
   getBurgers() {
-    this.Breakfast=[];
-    this.Articles = []
+    this.Breakfast = [];
+    this.Breakfast = [];
+    this.MainArticles = [];
+    this.Articles = [];
     this.Burgers = this.service.getBurgers();
     this.Articles = this.Burgers;
   }
 
   getExtra() {
-    this.Breakfast=[];
+    this.Breakfast = [];
     this.Articles = []
+    this.MainArticles = [];
     this.Extra = this.service.getExtra();
     this.Articles = this.Extra;
 

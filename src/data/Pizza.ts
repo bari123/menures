@@ -1,7 +1,7 @@
 export const pizza = [
   {
     id: 1,
-    name: "Pizza Margherita L/XL",
+    name: "Pizza Margarita L/XL",
     price: "100/130",
     description: "Mozzarella , Salce Domatesh "
   },
