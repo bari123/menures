@@ -1,15 +1,32 @@
 .menuContainer {
   width: 100%;
   overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.mainContainer{
+  background-image: url("src/assets/Backgrounds/breakfast-fried-eggs-with-vegetables-shakshuka-frying-pan-black-turkish-style.jpg");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.menuMainTitle{
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
 
 .menuCategories {
+  cursor: pointer;
   display: flex;
   flex-wrap: wrap;
   flex-direction: inherit;
   justify-content: space-around;
-  margin: 45px auto auto;
+  font-family: Nexa-bold-demo;
+  color: white;
+  padding: 20px;
 }
 
 .articleTitle {
@@ -62,10 +79,6 @@
   animation-duration: 7s;
 }
 
-
-.menuButtons:hover {
-  color: white;
-}
 
 
 .articles {

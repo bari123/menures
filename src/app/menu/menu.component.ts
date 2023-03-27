@@ -47,6 +47,7 @@ export class MenuComponent implements OnInit {
     this.Articles=[];
     this.Breakfast=[];
     this.MainArticles = this.service.getPijet(this.lang);
+    console.log(this.MainArticles)
   }
 
   getBreakfast() {

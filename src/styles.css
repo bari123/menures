@@ -1,3 +1,61 @@
-/*!* You can add global styles to this file, and also import other style files *!*/
-@import "../node_modules/font-awesome/css/font-awesome.css";
-/*@import "~mdb-angular-ui-kit/assets/scss/mdb.scss";*/
+:root {
+  --main: #F4F4F4;
+  --primary: #F0A500;
+  --secondary: #CF7500;
+  --black: #1A1C20;
+}
+
+@font-face {
+  font-family: Nexa-light;
+  src: url("../../Desktop/Nexa/Commercial/Nexa_V2_2020/WEB/NexaTextDemo-Light.eot") ;
+  src: url('../../Desktop/Nexa/Commercial/Nexa_V2_2020/WEB/NexaTextDemo-Light.eot?#iefix') format('embedded-opentype'),
+  url('../../Desktop/Nexa/Commercial/Nexa_V2_2020/WEB/NexaTextDemo-Light.woff2') format('woff2'),
+  url('../../Desktop/Nexa/Commercial/Nexa_V2_2020/WEB/NexaTextDemo-Light.woff') format('woff'),
+  url("../../Desktop/Nexa/Commercial/Nexa_V2_2020/TTF/NexaTextDemo-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Nexa-bold;
+  src: url("../../Desktop/Nexa/Commercial/Nexa_V2_2020/WEB/NexaTextDemo-Bold.eot") ;
+  src: url('../../Desktop/Nexa/Commercial/Nexa_V2_2020/WEB/NexaTextDemo-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../../Desktop/Nexa/Commercial/Nexa_V2_2020/WEB/NexaTextDemo-Bold.woff2') format('woff2'),
+  url('../../Desktop/Nexa/Commercial/Nexa_V2_2020/WEB/NexaTextDemo-Bold.woff') format('woff'),
+  url("../../Desktop/Nexa/Commercial/Nexa_V2_2020/TTF/NexaTextDemo-Bold.ttf") format("truetype");
+}
+
+
+@font-face {
+  font-family: Nexa-bold-demo;
+  src: url("../../Desktop/Nexa/Commercial/Nexa_V2_2020/WEB/NexaDemo-Bold.eot") ;
+  src: url('../../Desktop/Nexa/Commercial/Nexa_V2_2020/WEB/NexaDemo-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../../Desktop/Nexa/Commercial/Nexa_V2_2020/WEB/NexaDemo-Bold.woff') format('woff'),
+  url("../../Desktop/Nexa/Commercial/Nexa_V2_2020/TTF/NexaDemo-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Nexa-light-demo;
+  src: url("../../Desktop/Nexa/Commercial/Nexa_V2_2020/WEB/NexaDemo-Light.eot") ;
+  src: url('../../Desktop/Nexa/Commercial/Nexa_V2_2020/WEB/NexaDemo-Light.eot?#iefix') format('embedded-opentype'),
+  url('../../Desktop/Nexa/Commercial/Nexa_V2_2020/WEB/NexaDemo-Light.woff') format('woff'),
+  url("../../Desktop/Nexa/Commercial/Nexa_V2_2020/TTF/NexaDemo-Light.ttf") format("truetype");
+}
+
+
+.fontBold{
+  font-family: Nexa-bold-demo,sans-serif;
+  font-size: 24px;
+}
+
+.fontLight{
+  font-family: Nexa-light-demo,sans-serif;
+  font-size: 24px;
+}
+
+.text-primary{
+  color: var(--primary);
+}
+
+
+
+
+

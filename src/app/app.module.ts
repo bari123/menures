@@ -13,6 +13,10 @@ import {GalleryComponent} from './gallery/gallery.component';
 import {EventsComponent} from './events/events.component';
 import {HomeComponent} from './home/home.component';
 import {MdbCheckboxModule} from "mdb-angular-ui-kit/checkbox";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatToolbarModule} from "@angular/material/toolbar";
+import {MatIconModule} from "@angular/material/icon";
+import {MatDividerModule} from "@angular/material/divider";
 
 @NgModule({
   declarations: [
@@ -30,7 +34,11 @@ import {MdbCheckboxModule} from "mdb-angular-ui-kit/checkbox";
     GoogleMapsModule,
     HttpClientModule,
     HttpClientJsonpModule,
-    MdbCheckboxModule
+    MdbCheckboxModule,
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatDividerModule
   ],
 
   providers: [],
