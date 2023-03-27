@@ -7,37 +7,37 @@
 
 @font-face {
   font-family: Nexa-light;
-  src: url("../../Desktop/Nexa/Commercial/Nexa_V2_2020/WEB/NexaTextDemo-Light.eot") ;
-  src: url('../../Desktop/Nexa/Commercial/Nexa_V2_2020/WEB/NexaTextDemo-Light.eot?#iefix') format('embedded-opentype'),
-  url('../../Desktop/Nexa/Commercial/Nexa_V2_2020/WEB/NexaTextDemo-Light.woff2') format('woff2'),
-  url('../../Desktop/Nexa/Commercial/Nexa_V2_2020/WEB/NexaTextDemo-Light.woff') format('woff'),
-  url("../../Desktop/Nexa/Commercial/Nexa_V2_2020/TTF/NexaTextDemo-Light.ttf") format("truetype");
+  src: url("app/Fonts/NexaTextDemo-Light.eot") ;
+  src: url('app/Fonts/NexaTextDemo-Light.eot?#iefix') format('embedded-opentype'),
+  url('app/Fonts/NexaTextDemo-Light.woff2') format('woff2'),
+  url('app/Fonts/NexaTextDemo-Light.woff') format('woff'),
+  url("app/Fonts/TTf/NexaTextDemo-Light.ttf") format("truetype");
 }
 
 @font-face {
   font-family: Nexa-bold;
-  src: url("../../Desktop/Nexa/Commercial/Nexa_V2_2020/WEB/NexaTextDemo-Bold.eot") ;
-  src: url('../../Desktop/Nexa/Commercial/Nexa_V2_2020/WEB/NexaTextDemo-Bold.eot?#iefix') format('embedded-opentype'),
-  url('../../Desktop/Nexa/Commercial/Nexa_V2_2020/WEB/NexaTextDemo-Bold.woff2') format('woff2'),
-  url('../../Desktop/Nexa/Commercial/Nexa_V2_2020/WEB/NexaTextDemo-Bold.woff') format('woff'),
-  url("../../Desktop/Nexa/Commercial/Nexa_V2_2020/TTF/NexaTextDemo-Bold.ttf") format("truetype");
+  src: url("app/Fonts/NexaTextDemo-Bold.eot") ;
+  src: url('app/Fonts/NexaTextDemo-Bold.eot?#iefix') format('embedded-opentype'),
+  url('app/Fonts/NexaTextDemo-Bold.woff2') format('woff2'),
+  url('app/Fonts/NexaTextDemo-Bold.woff') format('woff'),
+  url("app/Fonts/TTf/NexaTextDemo-Bold.ttf") format("truetype");
 }
 
 
 @font-face {
   font-family: Nexa-bold-demo;
-  src: url("../../Desktop/Nexa/Commercial/Nexa_V2_2020/WEB/NexaDemo-Bold.eot") ;
-  src: url('../../Desktop/Nexa/Commercial/Nexa_V2_2020/WEB/NexaDemo-Bold.eot?#iefix') format('embedded-opentype'),
-  url('../../Desktop/Nexa/Commercial/Nexa_V2_2020/WEB/NexaDemo-Bold.woff') format('woff'),
-  url("../../Desktop/Nexa/Commercial/Nexa_V2_2020/TTF/NexaDemo-Bold.ttf") format("truetype");
+  src: url("app/Fonts/NexaDemo-Bold.eot") ;
+  src: url('app/Fonts/NexaDemo-Bold.eot?#iefix') format('embedded-opentype'),
+  url('app/Fonts/NexaDemo-Bold.woff') format('woff'),
+  url("app/Fonts/TTf/NexaDemo-Bold.ttf") format("truetype");
 }
 
 @font-face {
   font-family: Nexa-light-demo;
-  src: url("../../Desktop/Nexa/Commercial/Nexa_V2_2020/WEB/NexaDemo-Light.eot") ;
-  src: url('../../Desktop/Nexa/Commercial/Nexa_V2_2020/WEB/NexaDemo-Light.eot?#iefix') format('embedded-opentype'),
-  url('../../Desktop/Nexa/Commercial/Nexa_V2_2020/WEB/NexaDemo-Light.woff') format('woff'),
-  url("../../Desktop/Nexa/Commercial/Nexa_V2_2020/TTF/NexaDemo-Light.ttf") format("truetype");
+  src: url("app/Fonts/NexaDemo-Light.eot") ;
+  src: url('app/Fonts/NexaDemo-Light.eot?#iefix') format('embedded-opentype'),
+  url('app/Fonts/NexaDemo-Light.woff') format('woff'),
+  url("app/Fonts/TTf/NexaDemo-Light.ttf") format("truetype");
 }
 
 
