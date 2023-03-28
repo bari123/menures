@@ -16,6 +16,10 @@
   overflow: hidden;
 }
 
+.menu{
+  position: sticky;
+}
+
 .main {
   width: 100vw;
 }

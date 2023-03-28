@@ -1,5 +1,5 @@
-import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
-import {catchError, map, Observable, of} from "rxjs";
+import {Component, OnInit} from '@angular/core';
+import {catchError, map, of} from "rxjs";
 import {HttpClient} from "@angular/common/http";
 
 @Component({
