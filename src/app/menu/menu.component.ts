@@ -2,13 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {DataServiceService} from "../services/data-service.service";
 import {MenuModel} from "../models/menuModel";
 import {PijetModel} from "../models/pijet.model";
-import {BreakfastModel} from "../models/breakfast.model";
-import {BarbequeModel} from "../models/barbeque.model";
-import {PizzaModel} from "../models/pizza.model";
-import {SaladsModel} from "../models/salads.model";
-import {SendwichModel} from "../models/sendwich.model";
-import {ExtraModel} from "../models/extra.model";
-
+import {Platform, PlatformModule} from "@angular/cdk/platform";
 
 @Component({
   selector: 'app-menu',
@@ -19,22 +13,28 @@ export class MenuComponent implements OnInit {
   lang = "AL";
   MenuCategories: MenuModel[] = [];
   MainArticles: PijetModel[] = [];
-  Breakfast: BreakfastModel[] = [];
-  Bbq: BarbequeModel[] = [];
-  Pizza: PizzaModel[] = [];
-  Salads: SaladsModel[] = [];
-  Burgers: SendwichModel[] = [];
-  Extra: ExtraModel[] = [];
+
   Articles: any;
   item: string;
-  backgroundUrl = "https://img.freepik.com/free-photo/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall_1258-28313.jpg?w=1380&t=st=1667422964~exp=1667423564~hmac=5ac6c5433c6e1756bc162f72e408521d53b7c4d670376680b864b5a14e0eef3c";
 
-  constructor(private service: DataServiceService) {
+  constructor(private service: DataServiceService,private pm:Platform) {
   }
 
   ngOnInit(): void {
+    if(this.pm.ANDROID||this.pm.IOS){
+    this.Empty();
+    this.getMenu()
+    }else{
+
+
     this.getMenu();
     this.getPijet()
+    }
+  }
+
+  Empty() {
+    this.MainArticles = [];
+    this.Articles = [];
   }
 
   getMenu() {
@@ -43,57 +43,39 @@ export class MenuComponent implements OnInit {
 
 
   getPijet() {
-    this.MainArticles=[];
-    this.Articles=[];
-    this.Breakfast=[];
+    this.Empty()
     this.MainArticles = this.service.getPijet(this.lang);
-    console.log(this.MainArticles)
   }
 
   getBreakfast() {
-    this.MainArticles = []
-    this.Breakfast = this.service.getBreakfast();
+    this.Empty()
+    this.Articles = this.service.getBreakfast();
   }
 
   getBbq() {
-    this.Articles = [];
-    this.MainArticles = []
-    this.Bbq = this.service.getBbq();
-    this.Articles = this.Bbq;
+    this.Empty();
+    this.Articles = this.service.getBbq();
+
   }
 
   getPizza() {
-    this.Breakfast = [];
-    this.Articles = [];
-    this.MainArticles = []
-    this.Pizza = this.service.getPizza();
-    this.Articles = this.Pizza;
+    this.Empty()
+    this.Articles = this.service.getPizza();
   }
 
   getSalads() {
-    this.Breakfast = [];
-    this.Articles = [];
-    this.MainArticles = []
-    this.Salads = this.service.getSalads();
-    this.Articles = this.Salads;
+    this.Empty()
+    this.Articles = this.service.getSalads();
   }
 
   getBurgers() {
-    this.Breakfast = [];
-    this.Breakfast = [];
-    this.MainArticles = [];
-    this.Articles = [];
-    this.Burgers = this.service.getBurgers();
-    this.Articles = this.Burgers;
+   this.Empty()
+    this.Articles = this.service.getBurgers();
   }
 
   getExtra() {
-    this.Breakfast = [];
-    this.Articles = []
-    this.MainArticles = [];
-    this.Extra = this.service.getExtra();
-    this.Articles = this.Extra;
-
+   this.Empty()
+    this.Articles = this.service.getExtra();
   }
 
   selectMenu(id: number) {

@@ -1,11 +1,9 @@
 .menuContainer {
   width: 100%;
-  overflow-x: hidden;
-  overflow-y: scroll;
 }
 
 .mainContainer{
-  background-image: url("src/assets/Backgrounds/breakfast-fried-eggs-with-vegetables-shakshuka-frying-pan-black-turkish-style.jpg");
+  background-image: url("src/assets/Backgrounds/top-view-tasty-french-fries-with-sauces-black.jpg");
   background-size: cover;
   height: 100%;
   width: 100%;
@@ -14,7 +12,6 @@
 .menuMainTitle{
   padding: 20px;
   display: flex;
-  justify-content: space-between;
 }
 
 
@@ -24,7 +21,7 @@
   flex-wrap: wrap;
   flex-direction: inherit;
   justify-content: space-around;
-  font-family: Nexa-bold-demo;
+  font-family: Nexa-bold-demo,sans-serif;
   color: white;
   padding: 20px;
 }
@@ -87,40 +84,8 @@
 }
 
 
-ul.leaders {
-  max-width: 40em;
-  padding: 0;
-  overflow-x: hidden;
-  list-style: none
-}
-
-ul.leaders li:after {
-  float: left;
-  color: gold;
-  width: 0;
-  white-space: nowrap;
-  content: ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . "
-}
-
-ul.leaders span:first-child {
-  padding-right: 0.33em;
-  color: white;
-  /*background: white*/
-}
-
-ul.leaders span + span {
-  float: right;
-  padding-left: 0.33em;
-  color: white;
-  position: relative;
-  z-index: 1
-}
-
 @media screen and (max-width: 600px) {
   .menuCategories {
-    position: absolute;
-    left: 30px;
-    top: 140px;
     color: gold;
     display: flex;
     flex-wrap: wrap;
@@ -128,6 +93,20 @@ ul.leaders span + span {
     justify-content: space-around;
     margin: 2px auto auto;
   }
+
+  .menuContainer{
+    overflow-y: auto;
+    height: 75% !important;
+  }
+
+  .menuMainTitle{
+    display: flex;
+    flex-direction: column;
+  }
+  .spacing{
+    margin: 20px;
+  }
+
 
 }
 

@@ -17,6 +17,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatIconModule} from "@angular/material/icon";
 import {MatDividerModule} from "@angular/material/divider";
+import {MatRippleModule} from "@angular/material/core";
+import {MatSidenavModule} from "@angular/material/sidenav";
+import {PlatformModule} from "@angular/cdk/platform";
 
 @NgModule({
   declarations: [
@@ -38,7 +41,10 @@ import {MatDividerModule} from "@angular/material/divider";
     BrowserAnimationsModule,
     MatToolbarModule,
     MatIconModule,
-    MatDividerModule
+    MatDividerModule,
+    MatRippleModule,
+    MatSidenavModule,
+    PlatformModule
   ],
 
   providers: [],

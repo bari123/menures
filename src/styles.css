@@ -51,8 +51,21 @@
   font-size: 24px;
 }
 
-.text-primary{
+.descriptionFont{
+  font-family: Nexa-light-demo,sans-serif;
+  font-size: 18px;
+}
+
+.text-primary-gold{
   color: var(--primary);
+}
+
+.text-primary-white{
+  color: var(--main);
+}
+
+.text-primary-secondary{
+  color: var(--secondary);
 }
 
 

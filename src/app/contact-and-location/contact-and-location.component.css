@@ -1,9 +1,10 @@
 
-.aboutUs{
-  margin: 20px 0 20px 0;
+.aboutUs {
+ background-color: #1A1C20;
+  color: var(--primary);
 }
 
-.contactUs{
+.contactUs {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -12,59 +13,66 @@
   padding-bottom: 20px;
 }
 
-.phone{
+.phone {
   position: relative;
   animation: normal;
   animation-duration: 4s;
   animation-name: trin;
 }
-.trin-trin
-{
+
+.trin-trin {
   animation-name: trin;
   animation-duration: 1.5s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
-.number{
-  font-family: 'Maven Pro', sans-serif;
- font-size: 20px;
-  font-weight: bold;
+
+.number {
   top: 5px;
-  text-align: center;
   position: relative;
   animation-duration: 4s;
   animation-name: numberAboutUs;
 }
+
 @keyframes trin {
 
   from {
-    transform:rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
   }
   20%, 32%, 44%, 56%, 68% {
     transform: rotate3d(0, 0, 1, 0deg);
   }
   23%, 35%, 47%, 59%, 71% {
-    transform: rotate3d(0,0,1,15deg);
+    transform: rotate3d(0, 0, 1, 15deg);
   }
   26%, 38%, 50%, 62%, 74% {
-    transform: rotate3d(0,0,1,0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
   }
   29%, 41%, 53%, 65%, 77% {
-    transform: rotate3d(0,0,1,-15deg);
+    transform: rotate3d(0, 0, 1, -15deg);
   }
   80% {
-    transform:rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
   }
 
 }
 
 @keyframes phoneAboutUs {
-  0%{left:-200px}
-  100%{left:0px}
+  0% {
+    left: -200px
+  }
+  100% {
+    left: 0px
+  }
 }
+
 @keyframes numberAboutUs {
-  0%{right:-200px}
-  100%{right:0px}
+  0% {
+    right: -200px
+  }
+  100% {
+    right: 0px
+  }
 }
 
 body {
@@ -83,6 +91,7 @@ h1 {
   transform: scale(0.94);
   animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
 }
+
 @keyframes scale {
   100% {
     transform: scale(1);
@@ -167,12 +176,15 @@ span:nth-child(17) {
 span:nth-child(18) {
   animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
+
 span:nth-child(19) {
   animation: fade-in 0.8s 1.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
+
 span:nth-child(20) {
   animation: fade-in 0.8s 2.0s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
+
 span:nth-child(21) {
   animation: fade-in 0.8s 2.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
