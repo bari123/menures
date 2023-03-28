@@ -16,10 +16,6 @@ export class HomeComponent implements OnInit {
   this.getWorkingHours();
   }
 
-  playVideo(){
-    var myVideo:any = document.getElementById("vid");
-    if(myVideo.paused) myVideo.currentTime = 0; myVideo.play();
-  }
 
   getWorkingHours(){
     this.Schedule = this.service.getSchedule()

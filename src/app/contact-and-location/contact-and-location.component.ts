@@ -21,4 +21,7 @@ export class ContactAndLocationComponent implements OnInit {
 
   }
 
+  callMe() {
+    location.href="tel:+38971363974"
+  }
 }
