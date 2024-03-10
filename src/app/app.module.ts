@@ -9,8 +9,6 @@ import {GoogleMapsModule, MapMarker} from "@angular/google-maps";
 import {HttpClientJsonpModule, HttpClientModule} from "@angular/common/http";
 import {MenuComponent} from './menu/menu.component';
 import {ContactAndLocationComponent} from './contact-and-location/contact-and-location.component';
-import {GalleryComponent} from './gallery/gallery.component';
-import {EventsComponent} from './events/events.component';
 import {HomeComponent} from './home/home.component';
 import {MdbCheckboxModule} from "mdb-angular-ui-kit/checkbox";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -26,8 +24,6 @@ import {PlatformModule} from "@angular/cdk/platform";
     AppComponent,
     MenuComponent,
     ContactAndLocationComponent,
-    GalleryComponent,
-    EventsComponent,
     HomeComponent,
   ],
   imports: [

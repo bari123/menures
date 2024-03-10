@@ -16,7 +16,7 @@
   overflow: hidden;
 }
 
-.menu{
+.menu {
   position: sticky;
 }
 
@@ -68,13 +68,35 @@
     left: 10px;
     top: 15px;
   }
+  .languages{
+    display: none;
+  }
+  .languagesContainter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: end;
+    gap: 10px;
+  }
 }
 
-.side-drawer{
+.side-drawer {
   display: flex;
   width: 100%;
   background-color: black;
   padding: 20px;
+}
+
+.languages {
+  position: absolute;
+  left: 90%
+}
+
+.languagesContainter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 10px;
 }
 
 

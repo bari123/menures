@@ -30,8 +30,8 @@ export const menutkryesoreEn =
     {id:2 ,name:"Breakfast"},
     {id:3 ,name:"Salads"},
     {id:4 ,name:"Fast Food"},
-    {id:5 ,name:"Grilled"},
-    {id:6 ,name:"Food"},
+    {id:5 ,name:"Grill"},
+    {id:6 ,name:"Ekstra"},
     {id:7 ,name:"Pizza"},
   ]
 

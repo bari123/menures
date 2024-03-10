@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {DataServiceService} from "../services/data-service.service";
 import {MenuModel} from "../models/menuModel";
 import {PijetModel} from "../models/pijet.model";
-import {Platform, PlatformModule} from "@angular/cdk/platform";
+import {Platform} from "@angular/cdk/platform";
 
 @Component({
   selector: 'app-menu',
@@ -10,23 +10,21 @@ import {Platform, PlatformModule} from "@angular/cdk/platform";
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent implements OnInit {
-  lang = "AL";
   MenuCategories: MenuModel[] = [];
   MainArticles: PijetModel[] = [];
+  Lang='AL'
 
   Articles: any;
-  item: string;
 
   constructor(private service: DataServiceService,private pm:Platform) {
   }
 
   ngOnInit(): void {
+    this.Lang=localStorage.getItem('lang')
     if(this.pm.ANDROID||this.pm.IOS){
     this.Empty();
     this.getMenu()
     }else{
-
-
     this.getMenu();
     this.getPijet()
     }
@@ -38,61 +36,71 @@ export class MenuComponent implements OnInit {
   }
 
   getMenu() {
-    this.MenuCategories = this.service.getMenus(this.lang)
+    this.MenuCategories = this.service.getMenus(this.Lang)
   }
 
 
   getPijet() {
     this.Empty()
-    this.MainArticles = this.service.getPijet(this.lang);
+    this.MainArticles = this.service.getPijet(this.Lang);
   }
 
   getBreakfast() {
     this.Empty()
-    this.Articles = this.service.getBreakfast();
+    this.Articles = this.service.getBreakfast(this.Lang);
   }
 
   getBbq() {
     this.Empty();
-    this.Articles = this.service.getBbq();
+    this.Articles = this.service.getBbq(this.Lang);
 
   }
 
   getPizza() {
     this.Empty()
-    this.Articles = this.service.getPizza();
+    this.Articles = this.service.getPizza(this.Lang);
   }
 
   getSalads() {
     this.Empty()
-    this.Articles = this.service.getSalads();
+    this.Articles = this.service.getSalads(this.Lang);
   }
 
   getBurgers() {
    this.Empty()
-    this.Articles = this.service.getBurgers();
+    this.Articles = this.service.getBurgers(this.Lang);
   }
 
   getExtra() {
    this.Empty()
-    this.Articles = this.service.getExtra();
+    this.Articles = this.service.getExtra(this.Lang);
   }
 
   selectMenu(id: number) {
-    if (id == 0) {
-      this.getPijet();
-    } else if (id == 1) {
-      this.getBreakfast()
-    } else if (id == 2) {
-      this.getSalads()
-    } else if (id == 3) {
-      this.getBurgers();
-    } else if (id == 4) {
-      this.getBbq();
-    } else if (id == 5) {
-      this.getExtra();
-    } else if (id == 6) {
-      this.getPizza();
+    switch (id) {
+      case 0:
+        this.getPijet();
+        break;
+      case 1:
+        this.getBreakfast();
+        break;
+      case 2:
+        this.getSalads();
+        break;
+      case 3:
+        this.getBurgers();
+        break;
+      case 4:
+        this.getBbq();
+        break;
+      case 5:
+        this.getExtra();
+        break;
+      case 6:
+        this.getPizza();
+        break;
+      default:
+        break;
     }
   }
 }

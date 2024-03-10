@@ -18,6 +18,6 @@ export class HomeComponent implements OnInit {
 
 
   getWorkingHours(){
-    this.Schedule = this.service.getSchedule()
+    this.Schedule = this.service.getSchedule('AL')
   }
 }
