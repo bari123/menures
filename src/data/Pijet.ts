@@ -72,7 +72,7 @@ export const pijeTeNxehta = [
       {
         id: 13,
         name: "Machiato XL",
-        price: 50
+        price: 60
       },
       {
         id: 14,
@@ -92,7 +92,7 @@ export const pijeTeNxehta = [
       {
         id: 17,
         name: "Ness Cafe XL",
-        price: 50
+        price: 60
       },
       {
         id: 18,
@@ -228,7 +228,7 @@ export const pijeTeNxehtaMK = [
       {
         id: 13,
         name: "Макијато XL",
-        price: 50
+        price: 60
       },
       {
         id: 14,
@@ -248,7 +248,7 @@ export const pijeTeNxehtaMK = [
       {
         id: 17,
         name: "Нес Кафе XL",
-        price: 50
+        price: 60
       },
       {
         id: 18,
@@ -384,7 +384,7 @@ export const pijeTeNxehtaEN = [
       {
         id: 13,
         name: "Macchiato XL",
-        price: 50
+        price: 60
       },
       {
         id: 14,
@@ -404,7 +404,7 @@ export const pijeTeNxehtaEN = [
       {
         id: 17,
         name: "Ness Cofee XL",
-        price: 50
+        price: 60
       },
       {
         id: 18,

@@ -34,7 +34,7 @@ export const mengjesiAL = [
   {
     id: 6,
     name: "Corbe Pule",
-    price: 60,
+    price: 100,
     description: ""
   },
 
@@ -74,7 +74,7 @@ export const mengjesiMK = [
   {
     id: 6,
     name: "Пилешка Чорба",
-    price: 60,
+    price: 100,
     description: ""
   },
 ]
@@ -112,7 +112,7 @@ export const mengjesiEN = [
   {
     id: 6,
     name: "Chicken Soup",
-    price: 60,
+    price: 100,
     description: ""
   },
 ]
