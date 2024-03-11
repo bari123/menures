@@ -17,7 +17,7 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
-    localStorage.setItem('lang',this.lang)
+    localStorage.getItem('lang') || localStorage.setItem('lang', this.lang)
   }
 }
 
