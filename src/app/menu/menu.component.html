@@ -4,7 +4,7 @@
       <div class="col menuCategoriesName" (click)="selectMenu(id)">{{cat.name}}</div>
     </div>
   </div>
-  <div class="menuContainer " style="overflow-y: auto;height: 90%">
+  <div class="menuContainer background " style="overflow-y: auto;height: 90%">
     <div class="menuMainTitle" *ngIf="MainArticles.length">
       <div class="spacing" *ngFor="let article of MainArticles;let i = index">
         <div class="mb-4 fontBold text-primary-gold">{{article.title}}</div>

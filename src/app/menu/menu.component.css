@@ -3,10 +3,11 @@
 }
 
 .mainContainer{
-  background-image: url("src/assets/Backgrounds/top-view-tasty-french-fries-with-sauces-black.jpg");
-  background-size: cover;
   height: 100%;
   width: 100%;
+  background-color: #e5e5f7;
+  opacity: 0.8;
+  background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, black 30px ), repeating-linear-gradient( black, darkgoldenrod );
 }
 
 .menuMainTitle{
