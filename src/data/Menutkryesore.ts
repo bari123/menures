@@ -8,7 +8,7 @@ export const menutkryesoreAl =
     {id:3 ,name:"Sallata"},
     {id:4 ,name:"Fast Food"},
     {id:5 ,name:"Zgare"},
-    {id:6 ,name:"Ushqime"},
+    {id:6 ,name:"Ekstra"},
     {id:7 ,name:"Pizza"},
 
   ]

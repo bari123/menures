@@ -22,28 +22,28 @@ export const fastfoodAL = [
   {
     id: 4,
     name: "Hamburger/Pomfrit",
-    price: "90/100",
+    price: "110/120",
     description: "Pleskavice vici, Domate, Laken, Kastravec, Kecap , Majonez"
 
   },
   {
     id: 5,
     name: "Chicken Burger/Pomfrit",
-    price: "100/110",
+    price: "120/130",
     description: "Fileto Pule, Domate, Laken, Kastravec, Kecap , Majonez"
 
   },
   {
     id: 6,
     name: "Cheese Burger/Pomfrit ",
-    price: "100/110",
+    price: "120/130",
     description: "Pleskavice, Domate, Laken, Kastravec, Kecap , Majonez, Kashkavall"
 
   },
   {
     id: 7,
     name: "Sanduic/Pomfrit ",
-    price: "90/110",
+    price: "100/110",
     description: "Proshute, Kashkavall, Kastravec, Kecap , Majonez"
 
   },
@@ -71,25 +71,25 @@ export const fastfoodMK = [
   {
     id: 4,
     name: "Хамбургер/Помфрит",
-    price: "90/100",
+    price: "110/120",
     description: "Плескавица, Домат, Лакен, Краставец, Кечап, Мајонез"
   },
   {
     id: 5,
     name: "Пилешки Хамбургер/Помфрит",
-    price: "100/110",
+    price: "120/130",
     description: "Пилешко Филе, Домат, Лакен, Краставец, Кечап, Мајонез"
   },
   {
     id: 6,
     name: "Чизбургер/Помфрит",
-    price: "100/110",
+    price: "120/130",
     description: "Плескавица, Домат, Лакен, Краставец, Кечап, Мајонез, Кашкавал"
   },
   {
     id: 7,
     name: "Сендвич/Помфрит",
-    price: "90/110",
+    price: "100/110",
     description: "Пршута, Кашкавал, Краставец, Кечап, Мајонез"
   },
 ]
@@ -115,25 +115,25 @@ export const fastfoodEN = [
   {
     id: 4,
     name: "Hamburger/+Fries",
-    price: "90/100",
+    price: "110/120",
     description: "Beef Patty, Tomato, Lettuce, Cucumber, Ketchup, Mayonnaise"
   },
   {
     id: 5,
     name: "Chicken Burger/+Fries",
-    price: "100/110",
+    price: "120/130",
     description: "Chicken Fillet, Tomato, Lettuce, Cucumber, Ketchup, Mayonnaise"
   },
   {
     id: 6,
     name: "Cheese Burger/+Fries",
-    price: "100/110",
+    price: "120/130",
     description: "Beef Patty,Cheese ,Tomato, Lettuce, Cucumber, Ketchup, Mayonnaise"
   },
   {
     id: 7,
     name: "Sandwich/+Fries",
-    price: "90/110",
+    price: "100/110",
     description: "Prosciutto, Cheese, Cucumber, Ketchup, Mayonnaise"
   },
 ]
