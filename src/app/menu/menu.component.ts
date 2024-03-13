@@ -13,6 +13,7 @@ export class MenuComponent implements OnInit {
   MenuCategories: MenuModel[] = [];
   MainArticles: PijetModel[] = [];
   Lang='AL'
+  selectedId=null
 
   Articles: any;
 
@@ -77,6 +78,7 @@ export class MenuComponent implements OnInit {
   }
 
   selectMenu(id: number) {
+    this.selectedId=id
     switch (id) {
       case 0:
         this.getPijet();

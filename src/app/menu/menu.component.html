@@ -1,7 +1,8 @@
 <div class="mainContainer">
   <div class="menuCategories">
     <div *ngFor="let cat of MenuCategories;let id = index" class="row menuButtons">
-      <div class="col menuCategoriesName" (click)="selectMenu(id)">{{cat.name}}</div>
+      <div class="col menuCategoriesName" [ngClass]="{'MenuSelected': selectedId===id}"
+           (click)="selectMenu(id)">{{cat.name}}</div>
     </div>
   </div>
   <div class="menuContainer background " style="overflow-y: auto;height: 90%">
