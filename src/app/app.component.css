@@ -5,10 +5,13 @@
   justify-content: center;
 }
 
+.html body.mat-typography{
+  overflow-x: hidden;
+}
+
 .main__footer {
   display: flex;
   justify-content: flex-end;
-  background-color: red;
 }
 
 .main__body {
@@ -39,7 +42,7 @@
 .menu__items {
   text-decoration: none;
   cursor: pointer;
-  color: #1A1C20;
+  color: gold;
 }
 
 .menu__items_mobile {

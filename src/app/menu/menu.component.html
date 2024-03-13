@@ -5,9 +5,10 @@
            (click)="selectMenu(id)">{{cat.name}}</div>
     </div>
   </div>
-  <div class="menuContainer background " style="overflow-y: auto;height: 90%">
+  <div class="menuContainer background " style="overflow-y: auto;height: 90%;overflow-x: hidden">
+    <div style="display:flex;align-items: center;justify-content: center">
     <div class="menuMainTitle" *ngIf="MainArticles.length">
-      <div class="spacing" *ngFor="let article of MainArticles;let i = index">
+      <div class="spacing m-4" *ngFor="let article of MainArticles;let i = index">
         <div class="mb-4 fontBold text-primary-gold">{{article.title}}</div>
         <div *ngFor="let art of article.content">
           <li class="row justify-content-between">
@@ -18,14 +19,18 @@
         </div>
       </div>
     </div>
-    <div class="flex-column p-3 ">
-      <div *ngFor="let article of Articles;let i = index">
-        <div class="mb-4  fontBold text-primary-gold">{{article.title}}</div>
-        <li class="row justify-content-between">
-          <span class="fontLight mb-1 text-primary-white col-2  ">{{article.name}}</span>
-          <span class="fontBold text-primary-white col-4">{{article.price}}</span>
-        </li>
-        <span class="descriptionFont text-primary-gold ">{{article.description}}</span>
+  </div>
+    <div style="display:flex;align-items: center;justify-content: center">
+      <div class="flex-column p-3 ">
+        <div *ngFor="let article of Articles;let i = index">
+
+          <div class="mb-4 fontBold text-primary-gold">{{article.title}}</div>
+          <li class="row justify-content-between">
+            <span class="fontLight mb-1 text-primary-white col-2  ">{{article.name}}</span>
+            <span class="fontBold text-primary-white col-4">{{article.price}}</span>
+          </li>
+          <span class="descriptionFont text-primary-gold ">{{article.description}}</span>
+        </div>
 
       </div>
     </div>

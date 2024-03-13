@@ -15,8 +15,9 @@
 }
 
 .menuMainTitle{
-  padding: 20px;
+  /*padding: 20px;*/
   display: flex;
+  margin: 20px;
 }
 
 
@@ -27,7 +28,7 @@
   flex-direction: inherit;
   justify-content: space-around;
   font-family: Nexa-bold-demo,sans-serif;
-  color: white;
+  color: gold;
   padding: 20px;
 }
 
