@@ -36,14 +36,14 @@
     </mat-drawer>
 
     <div class="main__header">
-      <mat-toolbar class="menu">
-        <div class="menu__container">
+      <mat-toolbar class="menu" style="background-color: black">
+        <div class="menu__container" style="background-color: black" >
           <div class="menu__trigger">
-            <mat-icon (click)="drawer.open()" style="font-size: 33px">menu</mat-icon>
+            <mat-icon (click)="drawer.open()" style="font-size: 33px;color: #F0A500">menu</mat-icon>
           </div>
 
           <a matRipple [matRippleCentered]="true" [matRippleRadius]="20" class="toolbar-logo" routerLink="/">
-            <img src="assets/Logo/vector/default-monochrome-black.svg" width="100" height="50"
+            <img src="assets/Logo/vector/default-monochrome.svg" width="100" height="50"
                  alt="logo"/>
           </a>
           <mat-toolbar-row matRipple [matRippleCentered]="true" [matRippleRadius]="20">

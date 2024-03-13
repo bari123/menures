@@ -1,6 +1,11 @@
+.mainContainer {
+  background-color: black;
+  height: 100%;
+}
 
 .aboutUs {
- background-color: #1A1C20;
+  padding-top: 10px;
+  background-color: black;
   color: var(--primary);
 }
 
@@ -11,6 +16,7 @@
   justify-content: center;
   border-bottom: 1px solid black;
   padding-bottom: 20px;
+  background-color: black;
 }
 
 .phone {

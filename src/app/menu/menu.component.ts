@@ -21,10 +21,12 @@ export class MenuComponent implements OnInit {
   }
 
   ngOnInit(): void {
+
     this.Lang=localStorage.getItem('lang')
     if(this.pm.ANDROID||this.pm.IOS){
     this.Empty();
     this.getMenu()
+      this.getPijet()
     }else{
     this.getMenu();
     this.getPijet()
